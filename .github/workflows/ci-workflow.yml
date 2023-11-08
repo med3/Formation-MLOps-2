@@ -20,10 +20,10 @@ jobs:
       - name: Install dev dependencies
         run:  pip install -r requirements_test.txt
       - name: Run Linter
-        run: flake8 formation_indus_ds_avancee
+        run: flake8
       - name: Run Vulture
-        run: vulture formation_indus_ds_avancee scripts --min-confidence 100
+        run: vulture
       - name: Run tests
-        run: python -m pytest tests/test_unit
+        run: python -m pytest tests
 
 
