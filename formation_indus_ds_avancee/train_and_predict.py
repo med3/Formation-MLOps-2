@@ -20,6 +20,7 @@ def train_model(features: pd.DataFrame, model_registry_folder: str) -> None:
     model.fit(X, y)
     time_str = time.strftime('%Y%m%d-%H%M%S')
     joblib.dump(model, os.path.join(model_registry_folder, f'model_{time_str}.joblib'))
+    joblib.dump(model, os.path.join(model_registry_folder, f'model.joblib'))
 
 
 def predict_with_io(features_path: str, model_path: str, predictions_folder: str) -> None:
