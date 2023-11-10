@@ -13,7 +13,7 @@ GENERATED_DATA_PATH = os.path.join(DATA_FOLDER, 'la-haute-borne-data-2017-2020.c
 FEATURES_PATH = os.path.join(DATA_FOLDER, 'prepared_features.parquet')
 
 MODEL_REGISTRY_FOLDER = os.path.join(PROJECT_FOLDER, 'models')
-MODEL_PATH = os.path.join(MODEL_REGISTRY_FOLDER, '20200616-140746.joblib')  # To change when needed
+MODEL_PATH = os.path.join(MODEL_REGISTRY_FOLDER, '20231110-154205.joblib')  # To change when needed
 
 # Add your initials to the monitoring table name
 MONITORING_TABLE_NAME = 'monitoring_melar'
