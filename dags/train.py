@@ -10,6 +10,7 @@ sys.path.insert(0, os.path.abspath(os.path.dirname(os.path.dirname(__file__)))) 
 from dags.config import TRAIN_DATA_PATH, MODEL_REGISTRY_FOLDER, DATA_FOLDER
 from formation_indus_ds_avancee.feature_engineering import prepare_features_with_io
 from formation_indus_ds_avancee.train_and_predict import train_model_with_io
+from formation_indus_ds_avancee.monitoring import monitor_with_io
 
 
 @dag(default_args={'owner': 'airflow'}, schedule=timedelta(weeks=4),
